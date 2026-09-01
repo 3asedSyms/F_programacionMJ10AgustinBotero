@@ -22,7 +22,7 @@ namespace _10.CiclosWhile3
             {    
                 if (entrada <= numero)
                 {
-                    Console.WriteLine("muy bajo");
+                    Console.WriteLine("Muy bajo");
                 }
                 else if (entrada >= numero)
                 {
