@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace TallerCondicionales
 {
@@ -11,7 +12,7 @@ namespace TallerCondicionales
             diferentes, si es así, imprimir cual es el número mayor, además ordenar y mostrar en
             pantalla los números de menor a mayor.
             Si hay números iguales, el algoritmo debe mostrar un mensaje indicando que se deben
-            ingresar números diferentes.*/
+            ingresar números diferentes.
 
             int numero1;
             int numero2;
@@ -21,14 +22,7 @@ namespace TallerCondicionales
             numero2 = int.Parse(Console.ReadLine());
             numero3 = int.Parse(Console.ReadLine());
 
-            switch ()
-            {
-                case 0.0f:
-
-                    break;
-            }
-
-            /*if (numero1 != numero2 && numero1 != numero3 && numero2 != numero3) //Son diferentes
+            if (numero1 != numero2 && numero1 != numero3 && numero2 != numero3) //Son diferentes
             {
                if (numero1 > numero2 && numero1 > numero3) //numero1 es el mayor
                 {
@@ -68,6 +62,35 @@ namespace TallerCondicionales
                 Console.WriteLine("Se deben ingresar numeros diferentes");
             }*/
 
+            
+            
+            
+            // 2. El personaje de un juego puede disparar si cumple con las dos siguientes condiciones: Si cuenta con munición y se encuentra en estado invencible. Crear un programa que:
+            //a. Permita ingresar por teclado si el personaje está en estado invencible (True).
+            //b. La cantidad de munición que tiene el personaje en el momento será calculada por el sistema por medio de un número aleatorio, para ello utilizar la clase random de C#.
+            //c. Si el estado del personaje es invencible (true) y su cantidad de munición está entre 1 y 10, mostrar un mensaje en la consola "El personaje está disparando", en caso contrario no hacer nada.
+            
+            char entrada; 
+            bool estado;
+            int  munición;
+            
+            Random rand = new Random();
+            munición = rand.Next(1,10);
+
+           Console.WriteLine("¿El personaje esta en estado invencible? s o n");
+           entrada = char.Parse(Console.ReadLine());
+           if (entrada == 's' && munición <= 10 && munición >= 1)
+            {
+                estado = true;
+                Console.WriteLine("El personaje está disparando");
+            }
+            else
+            {
+                estado = false;
+            }
+            Console.WriteLine("Invencible: " + estado + "; Munición: " + munición);
+          
+            
         }
     }
 }

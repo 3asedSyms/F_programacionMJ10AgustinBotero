@@ -21,6 +21,7 @@ namespace _13.CicloFor
             int acumulador = 0;
 
             Console.WriteLine("Ingrese la cantidad de multiplos de 5 a evaluar: ");
+            
             n = int.Parse(Console.ReadLine());
 
             
@@ -29,7 +30,7 @@ namespace _13.CicloFor
                     acumulador++;
                     Console.WriteLine(contador);
                 }
-            
+               
         }
     }
 }
