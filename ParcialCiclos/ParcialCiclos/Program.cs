@@ -26,7 +26,7 @@ namespace ParcialCiclos
             int porcentajeEstudio = 0;
             int porcentajeTrabajo = 0;
             
-            while (contador < 3)
+            while (contador < 15)
             {
                 Console.WriteLine("Digitar T si trabaja o E si estudia");
                 ocupacion = Convert.ToChar(Console.ReadLine());
@@ -60,8 +60,8 @@ namespace ParcialCiclos
                 Console.WriteLine("Hombres: " + contadorHombre);
 
             }
-            porcentajeEstudio = (contadorEstudio / 3) * 100;
-            porcentajeTrabajo = (contadorTrabajo / 3) * 100;
+            porcentajeEstudio = (contadorEstudio / 15) * 100;
+            porcentajeTrabajo = (contadorTrabajo / 15) * 100;
             Console.WriteLine($"Trabaja :{porcentajeTrabajo}% ; Estudia: {porcentajeEstudio}%");
 
 
