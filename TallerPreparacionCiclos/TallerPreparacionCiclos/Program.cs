@@ -91,6 +91,32 @@ namespace TallerPreparacionCiclos
             // - Que su promedio sea menor o igual a 18 minutos.
             // Diseñar un algoritmo para registrar los datos y decidir si es apto para la competencia.
 
+       
+            /*int acumulador = 0;
+            int tiempo = 0;
+            double promedio = 0;
+            
+            for (int contador = 1; contador <= 10; contador++)
+            {
+                Console.WriteLine($"Tiempo día numero {contador} : ");
+                tiempo = Convert.ToInt16(Console.ReadLine());
+                acumulador += tiempo;
+                promedio = acumulador/contador;
+            }
+
+            if (tiempo <= 20 && tiempo < 15 && promedio <= 18)
+            {
+                Console.WriteLine("Es apto");
+            }
+            else
+            {
+                Console.WriteLine("No es apto");
+            }
+            Console.WriteLine("Promedio: " + promedio);*/
+
+
+
+
         }
     }
 }
