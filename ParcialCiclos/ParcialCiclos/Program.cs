@@ -5,7 +5,7 @@ namespace ParcialCiclos
     {
         static void Main(string[] args)
         {
-            // En el programa de ingeniería de sistemas, que cuenta con 15 estudiantes, se desa procesar información estadistica sobre la ocupación y el género de los alumnos
+            // En el programa de ingeniería de sistemas, que cuenta con 15 estudiantes, se desea procesar información estadistica sobre la ocupación y el género de los alumnos
             // Utilizando obligatoriamente una estructura repetitiva, el programa debe realizar las siguientes acciones por cada estudiante:
             // 1. Ingreso de datos: Solicitar por teclado la ocupación del estudiante y su género. Para evitar errores de escritura, se deben utilizar códigos estandarizados:
             // - Ocupación: Digitar T si trabaja o E si estudia
@@ -16,7 +16,7 @@ namespace ParcialCiclos
             // - La cantidad total de hombres que estudian
             // 4. Reporte Final: Mostrar claramente en pantalla los porcentajes calculados y los dos conteos especificos solicitados.
 
-            char genero;
+            /*char genero;
             char ocupacion;
             int contador = 0;
             int contadorMujer = 0;
@@ -63,7 +63,7 @@ namespace ParcialCiclos
             porcentajeEstudio = (contadorEstudio / 15) * 100;
             porcentajeTrabajo = (contadorTrabajo / 15) * 100;
             Console.WriteLine($"Trabaja :{porcentajeTrabajo}% ; Estudia: {porcentajeEstudio}%");
-
+*/
 
         }
     }
