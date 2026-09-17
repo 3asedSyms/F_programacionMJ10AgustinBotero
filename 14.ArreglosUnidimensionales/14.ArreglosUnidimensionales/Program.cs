@@ -30,39 +30,47 @@ namespace _14.ArreglosUnidimensionales
             }*/
 
             //Crear arreglo llamado "Enteros" de 100 elementos asignar el numero 10 en cada una de las posiciones del arreglo. Leer el contenido de cada elemento y mostrarlo en pantalla.
-           /* int[] enteros = new int[100];
+            /* int[] enteros = new int[100];
 
-            for (int i = 0; i < enteros.Length; i++)
-            {
-                enteros[i] = 10;
-                Console.WriteLine($"{enteros[i]}");
-            }
-            Console.Clear();*/
+             for (int i = 0; i < enteros.Length; i++)
+             {
+                 enteros[i] = 10;
+                 Console.WriteLine($"{enteros[i]}");
+             }
+             Console.Clear();*/
             //Algoritmo que permita solicitar 10 números, los cuales serán almacenados en un arreglo. Al final, debe visualizar el promedio de esos números
 
-           /* int[] arreglo = new int[10];
-            double acumulador = 0;
-            double promedio = 0;
-           
-            for(int i = 0; i < 10; i++)
-            {
-                arreglo[i] = int.Parse(Console.ReadLine());
-                acumulador += arreglo[i];
-            }
-            promedio = Convert.ToDouble(acumulador / 10);
-            Console.WriteLine(promedio);*/
+            /* int[] arreglo = new int[10];
+             double acumulador = 0;
+             double promedio = 0;
+
+             for(int i = 0; i < 10; i++)
+             {
+                 arreglo[i] = int.Parse(Console.ReadLine());
+                 acumulador += arreglo[i];
+             }
+             promedio = Convert.ToDouble(acumulador / 10);
+             Console.WriteLine(promedio);*/
 
             //Llene un arreglo con 15 números ingresados por teclado.Una vez registrado el total de valores, muestre en pantalla todos los elementos del arreglo. Finalmente determine cual es el número mayor y cual es el número menor, junto con la posición que ocupa dentro del arreglo.
 
+            int numeroMayor = 0;
+            int numeroMenor = 0;
             int[] arreglo = new int[15];
-            
+
             for (int i = 0; i < 15; i++)
             {
                 Console.WriteLine("Ingrese numero: ");
                 arreglo[i] = Convert.ToInt32(Console.ReadLine());
-
+               
+                /*if (arreglo[i] < arreglo[i+1])
+                {
+                    numeroMenor = arreglo[i];
+                }*/
             }
-            Console.WriteLine(arreglo[0], arreglo[1],);
+            Console.Write($"{arreglo[0]}, {arreglo[1]}, {arreglo[2]}, {arreglo[3]}, {arreglo[4]} , {arreglo[5]}, {arreglo[6]} , {arreglo[7]}, {arreglo[8]}, {arreglo[9]}, {arreglo[10]}, {arreglo[11]}, {arreglo[12]}, {arreglo[13]}, {arreglo[14]}");
+            //Console.WriteLine($"Mayor:{numeroMayor}");
+            Console.WriteLine($"Menor:{numeroMenor}");
         }
     }
 }
