@@ -8,15 +8,15 @@ namespace _15.ArreglosBidimensionales_Matrices
             int[,] numeros = new int[2, 3];
             // numeros[2,1] = 10; no se puede almacenar porque el indice de la fila no existe
             // numeros[1, 3] = 15; no se puede almacenar porque el indice de la columna no existe
-       /*     numeros[0, 0] = 12;
+            numeros[0, 0] = 12;
             numeros[0, 1] = 100;
             numeros[0, 2] = 56;
             numeros[1, 0] = 45;
             numeros[1, 1] = 8;
             numeros[1, 2] = 10;
-            Console.WriteLine($"El valor almacenado en numeros[1, 0]: {numeros[1, 0]}");*/
+            Console.WriteLine($"El valor almacenado en numeros[1, 0]: {numeros[1, 0]}");
             //Recorrer para llenar 
-           /* char[,] simbolos = new char[3, 2];
+            char[,] simbolos = new char[3, 2];
             for (int i =0; i < 3; i++)//Recorre las filas
             {
                 for (int j = 0; j < 2; j++)//Recorre las columnas
@@ -24,16 +24,16 @@ namespace _15.ArreglosBidimensionales_Matrices
                     Console.WriteLine($"Ingrese el caracter para simbolos[{i}, {j}]:");
                     simbolos[i, j] = char.Parse(Console.ReadLine());
                 }
-            }*/
+            }
             //Recorrer para recuperar datos
-            /*for (int i= 0; i<simbolos.GetLength(0); i++)//GetLength(0) devuelve el número de filas 
+            for (int i= 0; i<simbolos.GetLength(0); i++)//GetLength(0) devuelve el número de filas 
             {
                 for (int j = 0; j<simbolos.GetLength(1); j++)//GetLength(1) devuelve el número de columnas
                 {
                     Console.Write($" {simbolos[i, j]} |");
                 }
                 Console.WriteLine();
-            }*/
+            }
             //Otra forma de declarar e inicializar matrices
 
             string[,] nombres = {
