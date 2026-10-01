@@ -53,7 +53,7 @@ namespace TallerPreparacionMatrices
                     
                 }
                 Console.WriteLine();
-            }*/
+             v}*/
 
             // 2. Desarrollar un programa que crea una matriz de n filas * m columnas, el usuario ingresa caracteres en cada posición de la matriz hasta llenarla. El programa debe intercambiar la primera fila con la última fila de la matriz. Al final se debe imprimir la matriz original, y la matriz con intercambio de filas.
 
@@ -103,16 +103,7 @@ namespace TallerPreparacionMatrices
              * Crea un arreglo adicional para almacenar la frecuencia de cada número
              * Mostrar la matriz y el nuevo arreglo con la frecuencia de cada número
              */
-            int acumulador1 = 0;
-            int acumulador2 = 0;
-            int acumulador3 = 0;
-            int acumulador4 = 0;
-            int acumulador5 = 0;
-            int acumulador6 = 0;
-            int acumulador7 = 0;
-            int acumulador8 = 0;
-            int acumulador9 = 0;
-            int acumulador10 = 0;
+            
             Random rnd = new Random();
             int[,] matriz = new int[5, 5];
             int[] frecuencia = new int [10];
@@ -122,50 +113,49 @@ namespace TallerPreparacionMatrices
                 for (int j = 0; j < matriz.GetLength(1); j++)
                 {
                     matriz[i, j] = rnd.Next(1, 11);
-                    Console.Write($"{matriz[i, j]}|");
+                    Console.Write($" {matriz[i, j]} |");
                     switch (matriz[i, j])
                     {
                         case 1:
-                            acumulador1++;
+                            frecuencia[0]++;
                             break;
                         case 2:
-                            acumulador2++;
+                            frecuencia[1]++;
                             break;
                         case 3:
-                            acumulador3++;
+                            frecuencia[2]++;
                             break;
                         case 4:
-                            acumulador4++;
+                            frecuencia[3]++;
                             break;
                         case 5:
-                            acumulador5++;
+                            frecuencia[4]++;
                             break;
                         case 6:
-                            acumulador6++;
+                            frecuencia[5]++;
                             break;
                         case 7:
-                            acumulador7++;
+                            frecuencia[6]++;
                             break;
                         case 8:
-                            acumulador8++;
+                            frecuencia[7]++;
                             break;
                         case 9:
-                            acumulador9++;
+                            frecuencia[8]++;
                             break;
                         case 10:
-                            acumulador10++;
+                            frecuencia[9]++;
+                            break;
+                        default:
                             break;
                     }
                 }
                 Console.WriteLine();
             }
+            Console.WriteLine("-------------------");
             for(int i = 0; i < frecuencia.Length; i++)
             {
-                frecuencia[i] = { { acumulador1, acumulador2 } }
-                /*int[,] matrizSuma = {
-                                {matriz1[0,0] + matriz2[0,0], matriz1[0,1] + matriz2[0,1], matriz1[0,2] + matriz2[0,2]},
-                                {matriz1[1,0] + matriz2[1,0], matriz1[1,1] + matriz2[1,1], matriz1[1,2] + matriz2[1,2]},
-                            };*/
+                Console.Write($" {frecuencia[i]} |");
             }
             
 
