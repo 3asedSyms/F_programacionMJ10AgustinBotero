@@ -104,7 +104,7 @@ namespace TallerPreparacionMatrices
              * Mostrar la matriz y el nuevo arreglo con la frecuencia de cada número
              */
             
-            Random rnd = new Random();
+            /*Random rnd = new Random();
             int[,] matriz = new int[5, 5];
             int[] frecuencia = new int [10];
 
@@ -156,11 +156,58 @@ namespace TallerPreparacionMatrices
             for(int i = 0; i < frecuencia.Length; i++)
             {
                 Console.Write($" {frecuencia[i]} |");
-            }
+            }*/
+
+            // 4. Crea un algoritmo que represente un tablero de juego 5x5 donde se coloquen 3 "X" en posiciones aleatorias. Luego, el algoritmo le debe permitir al usuario adivinar la posición de una "X". 
             
+            char[,] tabla = new char[5, 5];
+            Random rand = new Random();
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0; j < 5; j++)
+                {
+                    Console.Write(tabla[i, j]);
+                }
+                Console.WriteLine();
+            }
+
+           
+           
 
 
+      // 5.
+            /*int filas;
+            int columnas;
+            Console.WriteLine("Ingrese filas:");
+            filas = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese columnas:");
+            columnas = int.Parse(Console.ReadLine());
 
+            int[,] enteros = new int [filas, columnas];
+            for(int i = 0;i < enteros.GetLength(0); i++)
+            {
+                for(int j = 0;j < enteros.GetLength(1); j++)
+                {
+                    enteros[i,j] = int.Parse(Console.ReadLine());
+                }
+            }
+            for (int i = 0; i < enteros.GetLength(0); i++)
+            {
+                for (int j = 0; j < enteros.GetLength(1); j++)
+                {
+                    Console.Write($" |{enteros[i, j]} |");
+                }
+                Console.WriteLine();
+            }
+
+            for (int i = 0; i < enteros.GetLength(1); i++)
+            {
+                for (int j = 0; j < enteros.GetLength(0); j++)
+                {
+                    Console.Write($" |{enteros[j, i]} |");
+                }
+                Console.WriteLine();
+            }*/
         }
     }
 }
