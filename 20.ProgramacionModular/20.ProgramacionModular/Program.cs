@@ -5,7 +5,7 @@ namespace _20.ProgramacionModular
     {
         static void Main(string[] args)
         {
-            //Crear una matriz de n filas por m columnas, que permita ingresar solamente múltiplos de 5 hasta que se llene la matriz.
+            //Crear una matriz de n filas por m columnas, que permita ingresar solamente múltiplos de 5 hasta que se llene la matriz
         }
     }
 }
